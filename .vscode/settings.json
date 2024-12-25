@@ -1,0 +1,9 @@
+{
+    "cSpell.words": [
+        "fastapi",
+        "openpyxl",
+        "Pydantic",
+        "sessionmaker",
+        "sqlalchemy"
+    ]
+}

@@ -1,0 +1,31 @@
+# Python caches
+__pycache__/
+.pytest_cache/
+venv/
+
+# IDE/Editor settings
+# .vscode/
+
+# Build artifacts
+# dist/
+# build/
+#*.egg-info/
+
+# Local data and configuration
+data/
+prompt.txt
+steps.md
+validation.md
+.env
+local_settings.py
+
+# Temporary files
+*.pyc
+*.swp
+*.bak
+
+# Jupyter Notebook
+*.ipynb_checkpoints/
+
+# Logs
+*.log
