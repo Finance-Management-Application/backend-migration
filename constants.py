@@ -3,6 +3,7 @@ from enum import Enum
 from .model import Category, SubCategory, Transaction
 
 
+
 class Workbook(str, Enum):
     LOCATION = './excel/data/clothing.xlsx'
     TRANSACTION = 'Transaction'
