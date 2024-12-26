@@ -29,6 +29,6 @@ class Transaction(BaseModel):
     transaction_mode: Literal['Online', 'Offline'] | None
     
     personal_or_dearness: Literal['Personal', 'Dearness']
-    relation: str | None
+    person_and_relation: str
 
     details: str | Literal['Missing', 'NA'] | None
