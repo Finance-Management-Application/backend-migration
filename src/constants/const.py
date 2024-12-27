@@ -9,36 +9,31 @@ BASEDIR = Path(__file__).parent.parent.parent / 'data'
 
 class Expense(Enum):
     TRANSACTION = {
-        "workbook": BASEDIR.joinpath('expense').joinpath('clothing.xlsx'),
-        "sheet": 'Transaction',
-        "columns": 15,
+        "workbooks": BASEDIR.joinpath('expense').joinpath('transactions').iterdir(),
+        "max_col": 15,
         "model": Transaction
     }
     CATEGORY = {
-        "workbook": BASEDIR.joinpath('expense').iterdir(),
-        "sheet": 'Category',
-        "columns": 1,
+        "workbook": BASEDIR.joinpath('expense').joinpath('category.xlsx'),
+        "max_col": 1,
         "model": Category
     }
     SUB_CATEGORY = {
-        "workbook": BASEDIR.joinpath('expense').iterdir(),
-        "sheet": 'Sub Category',
-        "columns": 2,
+        "workbook": BASEDIR.joinpath('expense').joinpath('sub_category.xlsx'),
+        "max_col": 2,
         "model": SubCategory
     }
 
 class Income(Enum):
     INCOME = {
         "workbook": BASEDIR.joinpath('income').iterdir(),
-        "sheet": 'Income',
-        "columns": 2,
+        "max_col": 2,
         "model": ""
     }
 
 class Investment(Enum):
     INVESTMENT = {
         "workbook": BASEDIR.joinpath('investment').iterdir(),
-        "sheet": 'Investment',
-        "columns": 2,
+        "max_col": 2,
         "model": ""
     }

@@ -1,6 +1,7 @@
 {
     "cSpell.words": [
         "fastapi",
+        "levelname",
         "openpyxl",
         "Pydantic",
         "sessionmaker",
