@@ -15,7 +15,7 @@ def get_logger(name: str, log_file: str, level: int = logging.DEBUG) -> logging.
     """
 
     BASEDIR = Path().parent.parent.parent
-    file_handler = logging.FileHandler(BASEDIR / 'log' / log_file)
+    file_handler = logging.FileHandler(BASEDIR / 'log' / log_file, mode='w')
     file_handler.setFormatter(logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s'))
 
     stream_handler = logging.StreamHandler()
@@ -24,6 +24,6 @@ def get_logger(name: str, log_file: str, level: int = logging.DEBUG) -> logging.
     logger = logging.getLogger(name)
     logger.setLevel(level)
     logger.addHandler(file_handler)
-    logger.addHandler(stream_handler)
+    # logger.addHandler(stream_handler)
 
     return logger

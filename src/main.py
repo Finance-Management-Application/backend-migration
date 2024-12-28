@@ -12,29 +12,10 @@ from services.reader import read, reads
 
 
 import time
-import threading
-
-def sleep():
-    print('Sleeping Starts')
-    time.sleep(1)
-    print('Sleeping End')
-
 
 start = time.perf_counter()
 
-# threads = []
-# for _ in range(10):
-#     t = threading.Thread(target=sleep)
-#     t.start()
-#     threads.append(t)
-
-# for thread in threads:
-#     thread.join()
-
-# for _ in range(5):
-#     sleep()
-
-
+reads(**Expense.TRANSACTION.value)
 
 finish = time.perf_counter()
 
